@@ -12,7 +12,7 @@ Welcome to the Unity project repository! 🎮 This document provides guidelines 
    ```
 3. Navigate to the project directory:
    ```bash
-   cd your-repo-folder
+   cd Gelatik-2025
    ```
 
 ---
