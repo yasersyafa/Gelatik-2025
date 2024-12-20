@@ -20,6 +20,7 @@ Welcome to the Unity project repository! 🎮 This document provides guidelines 
 ## 🛠️ Branch Naming Convention
 When creating a new branch, please follow this naming convention:
 - **scene/scene_name**
+- **feature/feature_name**
 - Example:
   ```bash
   scene/main-menu
