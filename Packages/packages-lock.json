@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.gabrielbigardi.spriteanimator": {
+      "version": "file:com.gabrielbigardi.spriteanimator@755143081a",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.editorcoroutines": "1.0.0"
+      }
+    },
     "com.unity.2d.animation": {
       "version": "9.1.1",
       "depth": 1,
@@ -104,6 +112,15 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.cinemachine": {
+      "version": "2.10.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.31"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.collab-proxy": {
       "version": "2.6.0",
       "depth": 0,
@@ -119,6 +136,13 @@
         "com.unity.burst": "1.6.6",
         "com.unity.test-framework": "1.1.31"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.editorcoroutines": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
