@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Gelatik-2025.sln"
+    "dotnet.defaultSolution": "GELATIK.sln"
 }
