@@ -5,9 +5,15 @@ using UnityEngine;
 public class StateManager : MonoBehaviour
 {
     public IGameState _currentState;
+
+    // states
+    public FoodMenu _fm = new();
+    public StartDay _sd = new();
+
     // Start is called before the first frame update
     void Start()
     {
+        _currentState = _sd;
         _currentState?.Enter(this);
     }
 
