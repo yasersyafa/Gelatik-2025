@@ -31,5 +31,27 @@ public class EmotionBars : BarBase
     {
         int startValue = (int)bar.value;
         StartCoroutine(BarAnimation(startValue, newValue, 1));
+        NgidamTrigger();
+    }
+
+    private bool NgidamTrigger()
+    {
+        int barValue = manager.emotion;
+        if(barValue <= 50)
+        {
+            manager.isNgidam = true;
+        }
+        else if(barValue > 70)
+        {
+            manager.isNgidam = false;
+        }
+        else
+        {
+            int chance = Mathf.Clamp(100 - ((barValue - 50) * 2), 0, 100);
+            manager.isNgidam = Random.Range(0, 100) < chance;
+        }
+
+        Debug.Log($"Istri Ngidam: {manager.isNgidam}");
+        return manager.isNgidam;
     }
 }

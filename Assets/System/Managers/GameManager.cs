@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public int emotion, calcium, vitD, folicAcid, iron, protein;
 
+    public bool isNgidam;
+
     // observer events 
     public event Action<int> OnCalciumChanged;
     public event Action<int> OnEmotionChanged;
