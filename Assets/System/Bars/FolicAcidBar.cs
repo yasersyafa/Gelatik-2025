@@ -28,6 +28,7 @@ public class FolicAcidBar : BarBase
 
     protected override void UpdateBar(int barValue)
     { 
-        bar.value = barValue;
+        int startValue = (int)bar.value;
+        StartCoroutine(BarAnimation(startValue, barValue, 1));
     }
 }

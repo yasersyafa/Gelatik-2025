@@ -15,9 +15,9 @@ public abstract class BarBase : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             int currentValue = Mathf.RoundToInt(Mathf.Lerp(start, target, elapsedTime / duration));
-            UpdateBar(currentValue);
+            bar.value = currentValue;
             yield return null;
         }
-        UpdateBar(target);
+        bar.value = target;
     }
 }

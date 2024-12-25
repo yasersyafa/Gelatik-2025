@@ -28,6 +28,7 @@ public class EmotionBars : BarBase
 
     protected override void UpdateBar(int newValue)
     {
-        bar.value = newValue;
+        int startValue = (int)bar.value;
+        StartCoroutine(BarAnimation(startValue, newValue, 1));
     }
 }

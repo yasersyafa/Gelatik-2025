@@ -42,10 +42,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // checking the unity events
-        // if(Input.GetKeyDown(KeyCode.Space))
-        // {
-        //     DecreaseStats();
-        // }
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            DecreaseStats();
+        }
     }
 
     public void Eat()

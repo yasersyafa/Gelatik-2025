@@ -29,9 +29,9 @@ public class CalciumBar : BarBase
 
     protected override void UpdateBar(int barValue)
     {
-        // int startValue = (int)bar.value;
-        // StartCoroutine(BarAnimation(startValue, barValue, 1));
-        bar.value = barValue;
+        int startValue = (int)bar.value;
+        StartCoroutine(BarAnimation(startValue, barValue, 1));
+        // bar.value = barValue;
     }
 
 }
