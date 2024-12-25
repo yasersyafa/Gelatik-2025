@@ -12,6 +12,7 @@ public class VitaminDBar : BarBase
         manager = GameManager.Instance;
         if(manager != null) manager.OnVitDChanged += UpdateBar;
         bar.value = manager.vitD;
+        barText.text = manager.vitD.ToString()  + "%";
     }
 
     // Update is called once per frame

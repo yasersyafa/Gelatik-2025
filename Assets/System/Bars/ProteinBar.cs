@@ -12,6 +12,7 @@ public class ProteinBar : BarBase
         manager = GameManager.Instance;
         if(manager != null) manager.OnProteinChanged += UpdateBar;
         bar.value = manager.protein;
+        barText.text = manager.protein.ToString() + "%";
     }
 
     // Update is called once per frame

@@ -13,6 +13,7 @@ public class FolicAcidBar : BarBase
         manager = GameManager.Instance;
         if(manager != null) manager.OnFolicAcidChanged += UpdateBar;
         bar.value = manager.folicAcid;
+        barText.text = manager.folicAcid.ToString() + "%";
     }
 
     // Update is called once per frame

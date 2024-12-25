@@ -14,6 +14,7 @@ public class CalciumBar : BarBase
 
         if(manager != null) manager.OnCalciumChanged += UpdateBar;
         bar.value = manager.calcium;
+        barText.text = manager.calcium.ToString() + "%";
     }
 
     // Update is called once per frame

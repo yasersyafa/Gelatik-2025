@@ -13,6 +13,7 @@ public class EmotionBars : BarBase
         manager = GameManager.Instance;
         if(manager != null) manager.OnEmotionChanged += UpdateBar;
         bar.value = manager.emotion;
+        barText.text = manager.emotion.ToString() + "%";
     }
 
     // Update is called once per frame

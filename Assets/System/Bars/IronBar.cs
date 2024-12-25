@@ -12,6 +12,7 @@ public class IronBar : BarBase
         manager = GameManager.Instance;
         if(manager != null) manager.OnIronChanged += UpdateBar;
         bar.value = manager.iron;
+        barText.text = manager.iron.ToString() + "%";
     }
 
     // Update is called once per frame
