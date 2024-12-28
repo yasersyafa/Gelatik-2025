@@ -12,4 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78fb69ffe81fff24c911dff3c0f57017, type: 3}
   m_Name: StartDay1
   m_EditorClassIdentifier: 
-  dialogueLines: []
+  dialogueLines:
+  - dialogueCharacter:
+      characterName: 
+      character1: {fileID: 0}
+      character2: {fileID: 0}
+      isCharacter1: 0
+    line: 
+  - dialogueCharacter:
+      characterName: 
+      character1: {fileID: 0}
+      character2: {fileID: 0}
+      isCharacter1: 0
+    line: 
+  - dialogueCharacter:
+      characterName: 
+      character1: {fileID: 0}
+      character2: {fileID: 0}
+      isCharacter1: 0
+    line: 
