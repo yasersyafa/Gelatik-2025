@@ -5,6 +5,7 @@ using UnityEngine;
 public class StateManager : MonoBehaviour
 {
     public IGameState _currentState;
+    public List<Dialogue> dialogues = new();
 
     // states
     public FoodMenu _fm = new();

@@ -25,7 +25,7 @@ public class StartDay : IGameState
     private void GetStats()
     {
         GameManager manager = GameManager.Instance;
-        Object.transform.DOLocalMoveY(0f, 1f, true).SetEase(Ease.InElastic).OnComplete(() => {
+        Object.transform.DOLocalMoveY(0f, 1f, true).SetEase(Ease.InBack).OnComplete(() => {
             manager.DecreaseStats();
         });
         
