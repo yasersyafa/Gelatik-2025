@@ -29,10 +29,21 @@ public static class SaveManager
         game.date = data.date;
         game.time = data.time;
 
-        game.workers.Clear();
+        // game.workers.Clear();
         game.transportations.Clear();
         game.purchasedItems.Clear();
 
         // add foreach for workers, transportation, purchasedItems
+        foreach(string name in data.transportationNames)
+        {
+            Transportation transportation = db.GetTransportation(name);
+            if(transportation != null) game.transportations.Add(transportation);
+        }
+
+        foreach(string name in data.purchasedItemNames)
+        {
+            Items item = db.GetItems(name);
+            if(item != null) game.purchasedItems.Add(item);
+        }
     }
 }

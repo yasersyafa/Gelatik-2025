@@ -7,20 +7,19 @@ public class GameManager : MonoBehaviour
     public int money, popularity;
     public string date, time;
 
-    public List<string> workers;
-    public List<string> transportations;
-    public List<string> purchasedItems;
+    // public List<Worker> workers;
+    public List<Transportation> transportations;
+    public List<Items> purchasedItems;
 
     public DatabaseManager database;
-    // Start is called before the first frame update
-    void Start()
+    
+    public void SaveGame()
     {
-        
+        SaveManager.SaveGame(this);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadGame()
     {
-        
+        SaveManager.LoadGame(this, database);
     }
 }

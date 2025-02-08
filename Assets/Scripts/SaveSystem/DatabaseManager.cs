@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class DatabaseManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // public List<T> workers;
+    public List<Transportation> transportations;
+    public List<Items> items;
+
+    public Transportation GetTransportation(string name)
     {
-        
+        return transportations.Find(t => t.name == name);
     }
 
-    // Update is called once per frame
-    void Update()
+    public Items GetItems(string name)
     {
-        
+        return items.Find(i => i.name == name);
     }
 }

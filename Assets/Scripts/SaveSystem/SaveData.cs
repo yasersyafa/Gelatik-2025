@@ -28,14 +28,14 @@ public class SaveData
             // workerNames.Add(worker.name);
         }
 
-        foreach(var transportation in transportationNames)
+        foreach(var transportation in game.transportations)
         {
-            // transportationNames.Add(transportation.name)
+            transportationNames.Add(transportation.name);
         }
 
-        foreach(var purchasedItem in purchasedItemNames)
+        foreach(var purchasedItem in game.purchasedItems)
         {
-            // purchasedItemNames.Add(purchasedItem.name)
+            purchasedItemNames.Add(purchasedItem.name);
         }
     }
 }
